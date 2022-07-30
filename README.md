@@ -2,7 +2,8 @@
 
 A custom OTP view written in compose usually used in cases of authentication.
 
-#USE
+#HOW TO USE
+
 val otpFieldCount = 6
 
 val otpValueHolder = remember { mutableStateListOf<MutableState<String>>() }
