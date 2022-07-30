@@ -4,6 +4,8 @@ A custom OTP view written in compose usually used in cases of authentication.
 
 #HOW TO USE
 
+{
+
 val otpFieldCount = 6
 
 val otpValueHolder = remember { mutableStateListOf<MutableState<String>>() }
@@ -33,3 +35,5 @@ private fun getOtpValue(otpValueHolder: SnapshotStateList<MutableState<String>>)
         Log.d("TAG", "onCreate: ${getOtp.value}") 
   
 }
+
+  }
