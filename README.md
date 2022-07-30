@@ -25,9 +25,11 @@ OtpFields(
 //just pass otpValueHolder
   
 private fun getOtpValue(otpValueHolder: SnapshotStateList<MutableState<String>>) {
+  
         getOtp.value = ""
         otpValueHolder.forEach {
             getOtp.value += it.value
         }
         Log.d("TAG", "onCreate: ${getOtp.value}") 
+  
 }
